@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Grave Agora seu Relato Real em Vídeo Sobre sua Experiência na Maior Rede Sugar da América Latina - O MeuPatrocínio" />
+ <meta property="og:title" content="MeuPatrocínio - Relatos Reais em Vídeo">
+<meta property="og:description" content="Grave Agora seu Relato Real em Vídeo Sobre sua Experiência na Maior Rede Sugar da América Latina - O MeuPatrocínio">
+<meta property="og:image" content="https://wordpress-meupatrocinio.s3.amazonaws.com/wp-content/uploads/2019/09/24061429/homepage_banner_533776e7bda3fcc670bb9dad23ce6288.jpg">
+<meta property="og:url" content="#">
+
+<meta property="twitter:title" content="MeuPatrocínio - Relatos Reais em Vídeo">
+<meta property="twitter:description" content="Grave Agora seu Relato Real em Vídeo Sobre sua Experiência na Maior Rede Sugar da América Latina - O MeuPatrocínio">
+<meta property="twitter:image" content="https://wordpress-meupatrocinio.s3.amazonaws.com/wp-content/uploads/2019/09/24061429/homepage_banner_533776e7bda3fcc670bb9dad23ce6288.jpg">
+<meta property="twitter:card" content="#">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+
+.iframe-video {
+  position: relative !important;
+  width: fit-content !important;
+}
+
+.header {
+    background-color:#000;
+}
+
+.logo {
+    max-width:150px;
+}
+
+.buttons-navbar {
+    float:right;
+}
+
+.cadastre {
+    font-family:'Montserrat', sans-serif;
+    color:#fff !important;
+    background-color:#e00d00;
+    border-radius:8px;
+    padding:8px 40px !important;
+    font-weight:medium;
+    max-width:200px;
+}
+.cadastre:hover {
+    background-color:#B00B01;
+    transition-delay:0.2 s;
+}
+
+.login {
+    font-family:'Montserrat', sans-serif;
+    color:#fff;
+
+}
+
+.login:hover {
+    color:#AEAEAE;
+}
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size:19px;
+    font-weight:700;
+    color:#000;
+    text-transform:uppercase;
+}
+
+.titulo-vermelho {
+    color:#e00d00;
+}
+
+.pergunta {
+    font-family:'Open Sans', sans-serif;
+    font-weight:600;
+    font-size:16px;
+}
+
+.resposta {
+    font-family:'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+.card-desktop {
+    background-color:#fff;
+    box-shadow:0 10px 60px 0 rgba(0, 0, 0, 0.3);
+    border-radius:8px;
+}
+.top-card-dkt {
+    background: linear-gradient(278deg, #e00c00, #e00c00 48%, #b90a00);
+    border-radius: 8px 8px 0 0;
+}
+
+.titulo-card {
+    font-family:'Montserrat', sans-serif;
+    color:#fff;
+    padding: 0px 15px;
+    font-weight:800;
+    font-size:16px;
+
+}
+
+.placeholder {
+    position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.texto {
+    font-family:'Open Sans' sans-serif;
+    font-size: 12px;
+    color:#888;
+    text-align:justify;
+}
+
+.importante {
+    text-transform:uppercase;
+    font-weight:700;
+    color:#e00d00;
+
+}
+
+
+.video-api-desktop {
+    position: relative;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.ba-videorecorder-theme-modern-chooser-container {
+
+    position: fixed !important;
+}
+/* List Styles */
+/* Experiences */
+ul.steps {
+    padding-left: 15px;
+    margin-top: -1px;
+}
+ul.steps li {
+    padding-left: 33px;
+    margin-bottom: 2.5em;
+    list-style: none;
+    background: url('../img/misc/list-bullet-darkgray.png') no-repeat;
+}
+
+
+.pergunta {
+    display: inline;
+    margin-right: 0.5em;
+}
+
+
+.resposta {
+    display: block;
+    margin-top: 0.5em;
+}
+
+
+/* BORDERS AND BULLETS */
+
+p {
+    margin-bottom: 0;
+}
+
+ul.steps li {
+    position:relative;
+    margin-bottom: 0;
+    padding-bottom: 2.5em;
+}
+
+ul.steps li:after {
+    /* bullets */
+    content: url('https://rapido-mkt.s3.us-east-2.amazonaws.com/assets/img/quadrado.png');
+    position: absolute;
+    left: -17px;
+    top: 0px;
+}
+
+ul.steps li:before {
+
+    content:"";
+    position: absolute;
+    left: -14px;
+    border-left: 2px solid #e00c00;
+    height: 100%;
+    width: 1px;
+}
+
+ul.steps li:first-child:before {
+
+   top: 18px;
+}
+
+ul.steps li:last-child:before {
+   height: 10px;
+}
+
+/* End List Styles */
+/* footer */
+.footer {
+    background-color:#222;
+    padding:15px;
+    max-height:300px;
+ }
+ .gplay {
+    max-width:150px;
+    margin:auto;
+ }
+
+ .texto-footer {
+    font-size:12px;
+    font-family: 'Open Sans', sans-serif;
+    color:#fff;
+    text-align:center;
+ }
+ .logo-footer {
+    max-width:200px;
+    margin:auto;
+ }
+.icones {
+    max-width:25px;
+}
+ /* end footer */
+
+ @media all and (min-width:767px) {
+
+    .footer {
+        max-height:150px;
+    }
+    .pergunta {
+        font-family:'Open Sans', sans-serif;
+        font-weight:600;
+        font-size:19px;
+    }
+
+    .titulo {
+        font-size:31px;
+    }
+    .titulo-card {
+        font-size:20px;
+    }
+
+    .texto {
+        font-size:15px;
+    }
+
+ }
+    </style>
+    <title>MeuPatrocínio - Relatos Reais em Vídeo</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+
+
+        <nav class="navbar navbar-expand-md justify-content-between navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="https://meupatrocinio.com">
+                    <img src="https://wordpress-meupatrocinio.s3.amazonaws.com/wp-content/uploads/2018/05/11122025/logo-meupatrocinio-02.png"
+                        alt="Logo" class="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+
+                    <ul class="navbar-nav ml-auto align-center text-center">
+                        <li class="nav-item m-1 ">
+                            <a class="login nav-link" href="#" role="button">Entrar</a>
+                        </li>
+                        <li class="nav-item m-1 text-center mx-auto">
+                            <a class="cadastre nav-link" href="#" role="button">Cadastre-se</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+    <main>
+        <section class="section1">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 mt-2">
+
+                        <h1 class="titulo pt-4">
+                            Como sua vida mudou após começar a fazer parte do <span
+                                class="titulo-vermelho">Meupatrocínio</span>?
+                        </h1>
+                        <div class="row pt-4">
+                            <div class="col-sm-12">
+                                <ul class="steps">
+
+
+                                    <li>
+                                        <div class="pergunta">Qual é o seu nome? De onde você é? O que faz da vida?</div>
+
+                                        <p class="resposta"> Exemplo "Olá! Meu nome é Sofia, sou Estudante de Engenharia
+                                            e sou do Rio de Janeiro.".</p>
+                                    </li>
+                                    <li>
+                                        <h2 class="pergunta"> Quando e por que voce se cadastrou no MeuPatrocinio?</h2>
+
+
+                                        <p class="resposta">Exemplo "Eu entrei no MeuPatrocinio porque estava cansada de relacionamentos vazios e homens imaturos. Foi quando eu decidi que merecia mais do que aquilo que estava vivendo, entao, me cadastrei."</p>
+                                    </li>
+                                    <li>
+                                        <h2 class="pergunta"> Você recomendaria o MeuPatrocinio para outras pessoas?<br>
+                                            O que voce diria para elas?</h2>
+                                        <p class="resposta">
+                                            Exemplo "Com certeza! Eu vivo dizendo para minhas amigas que a melhor
+                                            maneira de viver um relacionamento Sugar de verdade, com muitos mimos e
+                                            viagens, é se cadastrando no site!"
+                                        </p>
+
+
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="card-desktop text-center mt-md-5">
+                            <div class="top-card-dkt p-3">
+                                <img class="d-inline-block"
+                                    src="https://rapido-mkt.s3.us-east-2.amazonaws.com/assets/img/flecha.png">
+                                <p class="titulo-card d-inline-block">Grave Seu Vídeo Abaixo</p><img
+                                    class="d-inline-block"
+                                    src="https://rapido-mkt.s3.us-east-2.amazonaws.com/assets/img/flecha.png">
+                            </div>
+                            <div class="video-api-desktop mx-sm-0 mx-auto text-center">
+                                <iframe src="https://ziggeo.io/r/3103c888059b2b308991acb6251f8b1a"  class="placeholder iframe-video" frameborder="0" style="margin:auto;" scrolling="no" allow="speakers *; autoplay *; fullscreen *; microphone *; camera *; usermedia *; display-capture *;" allowspeakers allowautoplay allowfullscreen allowmicrophone allowcamera allowusermedia></iframe>
+
+                            </div>
+                            <div class="p-3 texto-video mx-sm-0 mb-5">
+                                <p class="texto"><span class="importante">Importante: </span>Após gravar seu vídeo, você DEVE esperar até que ele seja 100% processado. Então aparecerá um campo chamado "PREVIEW" e perguntará se você quer refazer o vídeo. Caso não queira, clique em "Next" abaixo do vídeo. Caso contrário, seu vídeo não será enviado!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class=" footer">
+        <div class="container">
+
+            <div class="row align-items-center justify-content-between d-flex text-footer">
+                <div class="col-md-4 text-center">
+                    <a href="https://meupatrocinio.com">
+                        <img class="logo-footer mt-2"
+                            src="https://s3.amazonaws.com/wordpress-meupatrocinio/wp-content/uploads/2018/05/11122025/logo-meupatrocinio-02.png"></a><br>
+
+                </div>
+                <div class="col-md-4 mt-sm-1 col-sm-6 text-footer-2 mx-auto">
+                    <p class="texto-footer text-center mt-3"> © 2020 MeuPatrocínio.<br>
+                        ® TODOS OS DIREITOS RESERVADOS. </p>
+                </div>
+
+
+                <div class="col-md-4 text-center">
+
+                    <div class="mx-auto">
+
+                        <img class="gplay"
+                            src="https://s3.amazonaws.com/wordpress-meupatrocinio/wp-content/uploads/2020/02/21102728/pt-br_badge_web_generic.png"></a>
+                        <div class=" icones-footer">
+                            <a class="link-footer" href=" https://www.facebook.com/meupatrocinio">
+                                <img class="icones"
+                                    src="https://rapido-mkt.s3.us-east-2.amazonaws.com/assets/valentines-day/ico01w.png"></a>
+
+                            <a class="link-footer" href="https://www.instagram.com/oficialmeupatrocinio/">
+                                <img class="icones"
+                                    src="https://rapido-mkt.s3.us-east-2.amazonaws.com/assets/valentines-day/instagram-fill-1.png"></a>
+
+                            <a class="link-footer" href="https://www.youtube.com/channel/UCPMt2Dze4-BauPpkLGB4L7g">
+                                <img class="icones"
+                                    src="https://rapido-mkt.s3.us-east-2.amazonaws.com/assets/valentines-day/ico06w.png"></a>
+                            <a class="link-footer" href="https://twitter.com/meupatrocinio">
+                                <img class="icones"
+                                    src="https://rapido-mkt.s3.us-east-2.amazonaws.com/assets/valentines-day/Path%20952.png"></a>
+                        </div>
+
+                    </div>
+
+                </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
