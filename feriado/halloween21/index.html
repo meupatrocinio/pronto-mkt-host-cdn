@@ -9555,38 +9555,53 @@
         .item {
             text-align: center;
             font-size: 1.5em;
-            margin-top:30px;
+            margin-top:50px;
+        }
+        @media screen and (min-width: 40em){
+            .item {
+                margin-top:50px;
+            }
+        }
+        @media screen and (min-width: 64em){
+            .item {
+                margin-top:130px;
+            }
         }
 
         /*Titles*/
         h3.desc{
             color:#FFF;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 600;
         }
-        @media screen and (min-width: 40em){
-            h3.desc{
-                font-size: 20px;
-            }
-        }
-        @media screen and (min-width: 64em){
-            h3.desc{
-                font-size: 40px;
-                margin-top: 25px;
-                margin-bottom: 25px;
-            }
-        }
         h3.desc span{
-            font-size: 28px;
+            font-size: 25px;
             text-transform: uppercase;
             color: #F0A821;
             font-weight: bold;
             line-height: 30px;
         }
+        @media screen and (min-width: 40em){
+            h3.desc, h3.desc span{
+                font-size: 25px;
+            }
+        }
+        @media screen and (min-width: 64em){
+            h3.desc{
+                font-size: 40px;
+                margin-top: 0;
+                margin-bottom: 25px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            h3.desc span{
+                font-size: 40px;
+            }
+        }
 
         /*Full Background*/  
         .bg-top {
-        height: 100%;
+        /*height: 100%;*/
         background: url(https://assets.meupatrocinio.com/assets/halloween2021/hwBg8D.png) no-repeat 50%/cover;
         }
 
@@ -9696,8 +9711,9 @@
         .baby-ticket{
             background-image: url('https://assets.meupatrocinio.com/assets/marketing/halloween2021/meupatrocinio-ticket-sugarbaby-code.png');
             background-repeat: no-repeat;
-            width: 245px;
-            height: 131px;
+            background-size: cover;
+            width: 300px;
+            height: 150px;
             margin: 0 auto;
         }
         .ticket-text{
@@ -9705,9 +9721,10 @@
             font-family: 'open_sansregular';
             font-size: 14px;
             text-align: center;
-            width: 180px;
-            margin-left: 40px;
-            padding-top: 27px;
+            width: 187px;
+            margin: 0 auto;
+            background: #FFF;
+            position: relative;
         }
         .ticket-text h2{
             font-size: 18px;
@@ -9725,12 +9742,16 @@
             margin-top: 20px;
         }
         .text-preheader p{
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 0;
+            color: #222;
         }
         .text-preheader a{
             max-width: 180px;
             margin: 20px auto;
+        }
+        .text-preheader p.sub-text{
+            font-size: 12px;
         }
 
         #areaText{
@@ -9738,27 +9759,44 @@
             background: transparent;
             border: none;
             resize: none;
-            color: #FFF;
+            color: #222;
             text-align: center;
             font-weight: bold;
             font-size: 25px;
-            width: 111px;
-            height: 35px;
+            width: 120px;
+            height: 38px;
             vertical-align: bottom;
         }
         #copy{
             display: inline-block;
-            cursor: pointer;
             font-size: 12px;
-            border: 1px solid #FFF;
-            padding: 3px 5px 4px 5px;
-            margin-left: 10px;
-            font-weight: normal;
-            border-radius: 3px;
-            background: transparent;
-            color: #FFF;
+            border: 1px solid #E00C00;
+            padding: 10px;
+            background: #E00C00;
             text-transform: uppercase;
             font-weight: bold;
+            margin-right: -1px;
+            font-weight: bold;
+            color:#FFF;
+        }
+        .boxCupom{
+            background-color: #FFF;
+            color: #222;
+            background-color: #FFF;
+            color: #222;
+            border-bottom: 1px dotted #cfcfcf;
+            padding-bottom: 25px;
+        }
+        .ticket-container{
+            background-color: #fff;
+            max-width: 300px;
+            width: 100%;
+            padding: 20px 35px;
+            -webkit-box-shadow: 3px 5px 15px 1px rgba(107,107,107,0.58);
+            box-shadow: 3px 5px 15px 1px rgba(107,107,107,0.58);
+        }
+        .sub-header, .discount-cupom{
+            margin-top:30px;
         }
 
     </style>
@@ -9768,26 +9806,28 @@
         <div class="container">
             <div class="flex">
                 <div class="item header-container">
-                    <img src="https://assets.meupatrocinio.com/assets/halloween2021/meupatrocinio_halloween_header.png" alt="Halloween MeuPatrocinio - Aproveite as nossas travessuras" />
+                    <img src="https://assets.meupatrocinio.com/assets/halloween2021/meupatrocinio_header_new.png?v123" alt="Halloween MeuPatrocinio - Aproveite as nossas travessuras" />
                 </div>
             </div>
             <div class="flex">
-                <div class="item">
-                    <h3 class="desc">😱 3 dias Premium <span>Grátis</span> no MeuPatrocínio</h3>
+                <div class="item sub-header">
+                    <h3 class="desc">
+                        Seja Premium <span>GRÁTIS</span> por 3 dias utilizando o cupom:
                 </div>
             </div>
             <div class="flex">
-                <div class="item">
-                    <div class="back face center baby-ticket">
-                        <div class="ticket-text">
-                            <h2>Utilize o cupom</h2>
+                <div class="item discount-cupom">
+                    <img src="https://assets.meupatrocinio.com/assets/halloween2021/meupatrocinio_top-cupom.png?v123" style="max-width: 300px; height: auto; margin-bottom: -9px;" />
+                    <div class="ticket-container">
+                        <div class="boxCupom">
                             <textarea id="areaText">CANDY21</textarea>
                             <button id="copy" class="button-copy">Copiar</button>
                         </div>
-                    </div>
-                    <div class="text-preheader">
-                        <p>Elas estão esperando você!</p>
-                        <a href="https://beta.meupatrocinio.com/cadastro?utm_campaign=halloween-3days-premium-free-sd&utm_source=mp-mktg" target="_blank" class="btn btn-primary btn-sign-in p-3 w-100">Vá para o site</a>
+                        <div class="text-preheader">
+                            <p>Elas estão esperando você!</p>
+                            <a href="https://beta.meupatrocinio.com/cadastro?utm_campaign=halloween-3days-premium-free-sd&utm_source=mp-mktg" target="_blank" class="btn btn-primary btn-sign-in p-3 w-100">Vá para o site</a>
+                            <p class="sub-text">Esse cupom é válido apenas para Sugar Daddies. Válido até 15 de Novembro ou enquanto durarem os cupons disponíveis.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -9960,7 +10000,8 @@
         btn.addEventListener('click', function(e) {
             let textArea = document.getElementById('areaText');
             textArea.select();
-            document.execCommand('copy');        
+            document.execCommand('copy');
+            $('#copy').text('Copiado!')
         });        
       </script>
   </body>
